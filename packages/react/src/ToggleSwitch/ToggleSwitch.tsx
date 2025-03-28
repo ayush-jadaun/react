@@ -270,14 +270,15 @@ const ToggleSwitch = React.forwardRef<HTMLButtonElement, React.PropsWithChildren
           </Box>
         </Text>
         <SwitchButton
-          ref={ref}
-          onClick={handleToggleClick}
-          aria-labelledby={ariaLabelledby}
-          aria-describedby={ariaDescribedby}
-          aria-pressed={isOn}
-          checked={isOn}
-          size={size}
-          disabled={!acceptsInteraction}
+        ref={ref}
+        type="button"  
+        onClick={handleToggleClick}
+        aria-labelledby={ariaLabelledby}
+        aria-describedby={ariaDescribedby}
+        aria-pressed={isOn}
+        checked={isOn}
+        size={size}
+        disabled={!acceptsInteraction}
         >
           <Box aria-hidden="true" display="flex" alignItems="center" width="100%" height="100%" overflow="hidden">
             <Box
